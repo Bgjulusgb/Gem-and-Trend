@@ -1,0 +1,32 @@
+{
+  "universe": {
+    "screeners": [
+      "aggressive_small_caps",
+      "small_cap_gainers",
+      "undervalued_growth_stocks",
+      "most_shorted_stocks"
+    ],
+    "use_trending": true,
+    "per_screener": 50,
+    "max_universe": 250,
+    "min_market_cap": 50000000,
+    "max_market_cap": 5000000000,
+    "min_price": 1.0,
+    "min_avg_volume": 150000
+  },
+  "fetch": {
+    "deep_limit": 40,
+    "concurrency": 6,
+    "requests_per_second": 4,
+    "chart_range": "6mo"
+  },
+  "output": {
+    "fmt": "table",
+    "top_k": 12,
+    "min_score": 50
+  },
+  "cache": {
+    "enabled": true,
+    "ttl_seconds": 900
+  }
+}
