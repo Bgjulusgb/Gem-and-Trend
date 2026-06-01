@@ -1,0 +1,6 @@
+# Hard dependency
+requests>=2.28
+
+# Optional: nicer terminal tables for `--output table`.
+# Without it the scanner automatically falls back to plaintext tables.
+rich>=13.0
